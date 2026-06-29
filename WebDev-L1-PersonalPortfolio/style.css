@@ -1,0 +1,652 @@
+/* ===========================
+   Google Font & Reset
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8fafc;
+    color:#1e293b;
+    line-height:1.6;
+}
+
+img{
+    max-width:100%;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:white;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    z-index:1000;
+}
+
+.navbar{
+
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+.logo{
+
+    color:#2563eb;
+    font-size:30px;
+    font-weight:700;
+
+}
+
+.nav-links{
+
+    display:flex;
+    gap:30px;
+
+}
+
+.nav-links a{
+
+    color:#1e293b;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#2563eb;
+
+}
+
+/* ===========================
+ Hero
+=========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#eff6ff,#ffffff);
+
+    padding:120px 8%;
+
+}
+
+.hero-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+.hero-text h3{
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+}
+
+.hero-text h1{
+
+    font-size:58px;
+
+    margin-bottom:15px;
+
+}
+
+.hero-text h2{
+
+    color:#64748b;
+
+    margin-bottom:20px;
+
+}
+
+.hero-text p{
+
+    margin-bottom:35px;
+
+    color:#475569;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:14px 35px;
+
+    border-radius:40px;
+
+    transition:.4s;
+
+}
+
+.btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-5px);
+
+}
+
+.btn-outline{
+
+    background:white;
+
+    color:#2563eb;
+
+    border:2px solid #2563eb;
+
+}
+
+.btn-outline:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.hero-image{
+
+    text-align:center;
+
+}
+
+.hero-image img{
+
+    width:360px;
+
+    height:360px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:8px solid white;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+ Sections
+=========================== */
+
+section{
+
+    padding:100px 10%;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:40px;
+
+    color:#2563eb;
+
+    margin-bottom:60px;
+
+}
+
+/* ===========================
+ About
+=========================== */
+
+.about-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.about-text{
+
+    text-align:center;
+
+    font-size:18px;
+
+    color:#475569;
+
+}
+
+.about-text p{
+
+    margin-bottom:20px;
+
+}
+
+/* ===========================
+ Skills
+=========================== */
+
+.skills-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.skill{
+
+    margin-bottom:30px;
+
+}
+
+.skill span{
+
+    font-weight:600;
+
+}
+
+.progress{
+
+    width:100%;
+
+    background:#e2e8f0;
+
+    height:18px;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    margin-top:8px;
+
+}
+
+.progress-bar{
+
+    height:18px;
+
+    color:white;
+
+    text-align:right;
+
+    padding-right:10px;
+
+    line-height:18px;
+
+    font-size:12px;
+
+    border-radius:30px;
+
+    background:#2563eb;
+
+}
+
+.html{
+
+    width:95%;
+
+}
+
+.css{
+
+    width:90%;
+
+}
+
+.js{
+
+    width:85%;
+
+}
+
+.react{
+
+    width:80%;
+
+}
+
+.node{
+
+    width:75%;
+
+}
+
+.mongo{
+
+    width:70%;
+
+}
+/* ===========================
+   Education
+=========================== */
+
+.education{
+    background:#f1f5f9;
+}
+
+.education-card{
+    max-width:800px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.education-card:hover{
+    transform:translateY(-10px);
+}
+
+.education-card i{
+    font-size:60px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.education-card h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.education-card h4{
+    color:#64748b;
+    margin-bottom:20px;
+}
+
+/* ===========================
+   Projects
+=========================== */
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 40px rgba(37,99,235,.2);
+}
+
+.project-card i{
+    font-size:55px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.project-card h3{
+    margin-bottom:15px;
+    color:#1e293b;
+}
+
+.project-card p{
+    color:#64748b;
+}
+
+/* ===========================
+   Contact
+=========================== */
+
+.contact{
+    background:#eff6ff;
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.contact-card{
+    background:white;
+    border-radius:15px;
+    padding:35px;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.contact-card:hover{
+    transform:translateY(-10px);
+}
+
+.contact-card i{
+    font-size:45px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.contact-card h3{
+    margin-bottom:10px;
+}
+
+.contact-card p,
+.contact-card a{
+    color:#475569;
+    word-break:break-word;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+}
+
+.social-icons{
+    margin-bottom:20px;
+}
+
+.social-icons a{
+    color:white;
+    font-size:24px;
+    margin:0 12px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    color:#60a5fa;
+}
+
+/* ===========================
+   Back To Top Button
+=========================== */
+
+#topBtn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#2563eb;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    display:none;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+#topBtn:hover{
+    background:#1d4ed8;
+    transform:translateY(-5px);
+}
+
+/* ===========================
+   Scroll Animation
+=========================== */
+
+.fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+@media(max-width:992px){
+
+.hero-content{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.buttons{
+    justify-content:center;
+}
+
+.hero-image{
+    order:-1;
+}
+
+.hero-image img{
+    width:280px;
+    height:280px;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+}
+
+.nav-links{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.section-title{
+    font-size:32px;
+}
+
+.hero{
+    padding-top:170px;
+}
+
+.hero-text h1{
+    font-size:36px;
+}
+
+.hero-text h2{
+    font-size:22px;
+}
+
+.buttons{
+    flex-direction:column;
+    align-items:center;
+}
+
+.btn{
+    width:220px;
+    text-align:center;
+}
+
+}
+
+@media(max-width:480px){
+
+.hero-image img{
+    width:220px;
+    height:220px;
+}
+
+.hero-text h1{
+    font-size:30px;
+}
+
+.hero-text p{
+    font-size:15px;
+}
+
+.project-card,
+.contact-card,
+.education-card{
+    padding:25px;
+}
+
+}
+.active{
+    color:#2563eb !important;
+    font-weight:700;
+}
